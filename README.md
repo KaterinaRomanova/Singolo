@@ -1,2 +1,2 @@
 # Singolo
-https://KaterinaRomanova.github.io/Singolo/
+https://KaterinaRomanova.github.io/Singolo/index.html
