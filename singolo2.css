@@ -1,0 +1,165 @@
+@font-face{
+    font-family: 'Lato';
+    Src: url("assets/fonts/Lato-Regular.ttf"); 
+    font-weight:900;
+}
+@font-face{
+    font-family: 'Lato-Bold';
+    Src: url("assets/fonts/Lato-Bold.ttf"); 
+    }
+@font-face{
+    font-family: 'Lato-Light';
+    Src: url("assets/fonts/Lato-Light.ttf"); 
+    }
+@font-face{
+    font-family: 'Lato-Black';
+    Src: url("assets/fonts/Lato-Black.ttf"); 
+    }
+
+
+body{
+    width: 1020px;
+    margin: auto;
+}
+.Portfolio{
+    background-color: rgb(45, 48, 58);
+    height: 864px;
+    border-bottom: 6px solid rgb(50, 55, 70);
+    
+}
+
+.Portfolio__wrapper{
+    padding-left: 40px;
+    color:rgb(118, 126, 158);
+    width: 940px;
+}
+
+.Portfolio__logo{
+    font-family: Lato-Black, serif;
+    font-size: 30px;
+    padding-top: 60px;
+    margin-bottom: 22px;
+    margin-top: 0px;
+}
+.Portfolio__text{
+    font-family: Lato-Light;
+    font-size: 18px;
+    margin: 0px;
+}
+.Portfolio__navigation-list{
+    padding-top: 1px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding-left: 0px;
+    padding-top: 14px;
+    width: 287px;
+    height: 22px;
+}
+.Portfolio__button{
+    padding: 3px;
+    margin-left: 3px;
+    border-radius: 5px;
+    background-color: #323746;
+    border: 2px solid #767e9e;
+    transition-duration: 0.4s;  
+    font-size: 12px;
+    color:rgb(118, 126, 158);
+    font-family: Lato-Regular, serif;
+}
+
+.Portfolio__button:hover{
+    border: 2px solid white; 
+    color:white; 
+    cursor: pointer;
+}
+.Portfolio__navigation-list>li{
+    display: inline-block;
+
+}
+.Portfolio__img-block{
+    padding-top: 20px;
+    height: 601px;
+    width: 940px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: hidden;
+}
+.Portfolio__img:nth-child(n+13) {
+    display: none;
+}
+
+.About-us{
+    background-color: rgb(242, 242, 242);
+    height: 728px;
+    border-bottom: 6px solid rgb(255, 255, 255);
+}
+
+.About-us__wrapper{
+    padding-left: 40px;
+    color: rgb(102, 109, 137);
+}
+
+.About-us__logo{
+    font-family: Lato-Black, serif;
+    font-size: 30px;
+    padding-top: 59px;
+    margin: 0;
+
+}
+.About-us__text{
+    font-family: Lato-Light;
+    text-align: justify;
+    font-size: 18px;
+    width: 940px;
+    height: 60px;
+    line-height:1.7;
+}
+.About-us__img-block{
+    padding-top: 27px;
+    height: 445px;
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.About-us__img-block_item{
+    width: 300px;
+    margin-left: 0;
+}
+.About-us__img-block__name{
+    padding-top: 11px;
+    margin: 0px;
+    margin-left: -1px;
+    font-size: 18px;
+    font-family: Lato-Black, serif;
+}
+.About-us__img-block__text{
+    width: 303px;
+    font-family: Lato-Regular;
+    text-align: justify;
+    margin:0px;
+    font-size: 12px;
+    margin-left: 0px;
+    padding-top: 9px;
+    height: 40px;
+    line-height:1.7;
+    letter-spacing:0.03em;
+    
+}
+.About-us__img-block_item__social_net{
+    width: 158px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-left: -2px;
+
+}
+.About-us__img-block_item__social_net:hover{
+    cursor: pointer;
+}
