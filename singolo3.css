@@ -1,0 +1,165 @@
+@font-face{
+    font-family: 'Lato';
+    Src: url("assets/fonts/Lato-Regular.ttf"); 
+    font-weight:900;
+}
+@font-face{
+    font-family: 'Lato-Bold';
+    Src: url("assets/fonts/Lato-Bold.ttf"); 
+    }
+@font-face{
+    font-family: 'Lato-Light';
+    Src: url("assets/fonts/Lato-Light.ttf"); 
+    }
+@font-face{
+    font-family: 'Lato-Black';
+    Src: url("assets/fonts/Lato-Black.ttf"); 
+    }
+
+body{
+    width: 1020px;
+    margin: auto;
+}
+.get-a-quote{
+    background-color: rgb(240, 108, 100);
+    color:rgb(255, 255, 255);
+    height: 648px;
+    border-bottom: 6px solid rgb(234, 103, 107);
+}
+.get-a-quote__wrapper{
+    margin: auto;
+    width: 940px;
+    
+    
+}
+.caption{
+    padding-top: 60px;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Lato-Black';
+}
+.text-style1{
+    padding-top: 17px;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato-Light';
+    text-align: justify;
+    line-height: 1.7;
+}
+.layout-2-column{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.get-a-quote__form{
+    width: 620px;
+    padding-top: 41px;
+}
+.get-a-quote__contact{
+    width: 300px;
+    padding-top: 41px;
+}
+h3{
+    font-size: 18px;
+    font-family: 'Lato-Black';
+    margin: 0;
+}
+.text-style2{
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Lato';
+    padding-top: 10px;
+    line-height: 1.79;
+    text-align: justify;
+}
+.contact-line{
+    padding-top: 26px;
+}
+.contact-line__block{
+    padding-left: 0px;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Lato';
+    padding-bottom: 7px;
+}
+.block-location{
+    padding-left: 3px;
+}
+.ico{
+    padding-right: 9px;
+}
+form{
+    padding-top: 2px;
+}
+textarea {
+    border-radius: 5px;
+    background-color: rgb(214, 86, 79);
+    width: 615px;
+    height: 199px;
+    border: none;
+    resize: none;
+}
+input{
+    margin-bottom: 16px;
+    height: 36px;
+    border-radius: 5px;
+    width: 619px;
+    background-color: rgb(214, 86, 79);
+    border: none;
+}
+footer{
+    color: rgb(102, 109, 137);
+    background-color: rgb(45, 48, 58);
+    height: 76px;
+}
+.footer-wrapper{
+    width: 940px;
+    margin: auto;
+    padding-top: 17px;
+}
+.footer-text{
+    width: 95px;
+}
+.footer-icon{
+padding-top: 5px;
+margin-right: -4px;
+}
+
+.social-net{
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 32px;
+
+}
+.social-net:hover{
+    cursor: pointer;
+}
+.get-a-quote__button{
+    padding-left: 520px;
+    padding-top: 10px;
+}
+.button{
+    background-color: rgb(214, 86, 79);
+    height: 36px;
+    width: 100px;
+    border-radius: 5px;
+    border:2px solid white;
+    color: white;
+}
+
+::placeholder {
+    font-family: Lato;
+    font-size: 12px;
+    color:#f0d8d9;
+    padding-left: 15px;
+}
+textarea::placeholder{
+    font-family: Lato;
+    font-size: 12px;
+    color:#f0d8d9;
+    padding-left: 12px;
+    padding-top: 9px;
+}
