@@ -7,27 +7,42 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__wrapper layout-2-column">
                 <h1 class="logo">Singolo<span class="logo-star">*</span></h1>
                 <nav class="header__navigation">
-                    <ul class="navigation layout-4-column">
-                        <li class="nav">Home<span>&#183;</span></li>
-                        <li class="nav">Services<span>&#183;</span></li>
-                        <li class="nav">Portfolio<span>&#183;</span></li>
-                        <li class="nav">About<span>&#183;</span></li>
-                        <li class="nav">Contact</li>
+                    <ul class="navigation layout-4-column" id="navigation">
+                        <li class="nav"><a href="#slider" class="active">Home</a><span>&#183;</span></li>
+                        <li class="nav"><a href="#our-services">Services</a><span>&#183;</span></li>
+                        <li class="nav"><a href="#portfolio">Portfolio</a><span>&#183;</span></li>
+                        <li class="nav"><a href="#about-us">About</a><span>&#183;</span></li>
+                        <li class="nav"><a href="#get-a-quote">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section class="slider">
-            <img src="assets/img/cursor.png" alt="cursor" class="cursor_left">
-                <img src="assets/img/iPhone_vertical.png" alt="iPhone Vertical" class="iPhone_vertical">
-                <img src="assets/img/iPhone_horizontal.png" alt="iPhone Horizontal" class="iPhone_horizontal">
-            <img src="assets/img/cursor.png" alt="cursor" class="cursor_right">
+        <section class="slider" id="slider">
+            <div class="slider__wrapper">
+                <div class="slides slid2 displayNone">
+                    <img src="assets/img-dom/Slide-2.png" alt="">
+                </div>
+                <div class="slides slid1 activeElement">
+                    <div class= "phone_wrapper">
+                        <div class="iPhone_vertical_wrapper">
+                            <img src="assets/img-dom/iPhoneVertical.png" alt="iPhone Vertical" class="iPhone_verticalBlack">
+                            <img src="assets/img/iPhone_vertical.png" alt="iPhone Vertical" class="iPhone_vertical">
+                        </div>
+                        <div class="">
+                            <img src="assets/img-dom/iPhoneHorizontal.png" alt="iPhone Horizontal" class="iPhone_horizontalBlack">
+                            <img src="assets/img/iPhone_horizontal.png" alt="iPhone Horizontal" class="iPhone_horizontal">
+                        </div>    
+                    </div>
+                </div>
+                <img src="assets/img/cursor.png" alt="cursor" class="cursor_left"> 
+                <img src="assets/img/cursor.png" alt="cursor" class="cursor_right">
+            </div>
         </section>
-        <section class="our-services">
+        <section class="our-services" id="our-services">
             <div class="our-services__wrapper">
                     <h2 class="caption">Our Services</h2>
                     <p class="text-style1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -79,19 +94,19 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio__wrapper">
                 <h2 class="caption">Portfolio</h2>
                 <p class="text-style1">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <nav class="portfolio__navigation"></nav>
-                    <ul class="navigation-list">
-                        <li><button class="portfolio__button">All</button></li>
+                    <ul class="navigation-list" id="navigation-list">
+                        <li><button class="portfolio__button active1">All</button></li>
                         <li><button class="portfolio__button">Web Design</button></li>
                         <li><button class="portfolio__button">Graphic Design</button></li>
                         <li><button class="portfolio__button">Artwork</button></li>
                     </ul>
                 </nav>
-                <div class="portfolio__img-block">
+                <div class="portfolio__img-block" id="portfolio__img-block">
                     <img src="assets/img-2part/Project1.png" alt="Project1" class="portfolio__img">
                     <img src="assets/img-2part/Project2.png" alt="Project2" class="portfolio__img">
                     <img src="assets/img-2part/Project3.png" alt="Project3" class="portfolio__img">
@@ -107,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="about-us__wrapper">
                 <h2 class="caption">About Us</h2>
                 <p class="text-style1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -148,17 +163,17 @@
                 </div>
             </div>
         </section>
-        <section class="get-a-quote">
+        <section class="get-a-quote" id="get-a-quote">
             <div class="get-a-quote__wrapper">
                 <h2 class="caption color-white">Get a Quote</h2>
                 <p class="text-style1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-2-column">
                     <div class="get-a-quote__form">
-                        <form action="" method="POST">
+                        <form action="" method="POST" >
                             <input type="text" name="name" placeholder="Name(Required)" required>
                             <input type="email" name="email" placeholder="Email(Required)" required>
-                            <input type="text" name="subject" placeholder="Subject">
-                            <textarea name="project-detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                            <input type="text" name="subject" placeholder="Subject" class="subject">
+                            <textarea name="project-detail" cols="30" rows="10" placeholder="Describe your project in detail..." class="project-detail"></textarea>
                             <div class="get-a-quote__button">
                                 <button class="button" type="submit">Send</button>
                             </div>
@@ -185,6 +200,14 @@
                 </div>
             </div>
         </section>
+        <section class="visibility modal">
+            <div class = "modal__wrapper">
+                <p class="modal__header">The letter was sent</button>
+                <p class = "subject-text"></p>
+                <p class = "project-detail-text"></p>
+                <button class="modal__button" type="button">ok</button>
+            </div>
+        </section>
         <footer>
             <div class="layout-2-column footer-wrapper">
                 <p class="text-style2 footer-text">© Copyright 2013</p>
@@ -196,6 +219,6 @@
                 </div>
             </div>
         </footer>
-        
+        <script src="script.js"></script>
     </body>
 </html>
