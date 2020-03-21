@@ -164,7 +164,16 @@ position: relative;
     margin-left: 425px;
     margin-top: 174px;
 }
-
+.shadow_vertical{
+    position: absolute;
+    margin-top: 53px;
+    margin-left: 112px;
+}
+.shadow_horizontal{
+    position: absolute;
+    margin-left: 426px;
+    margin-top: 174px;
+}
 .cursor_left{
     position: absolute;
     vertical-align: middle;
