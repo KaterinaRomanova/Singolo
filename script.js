@@ -14,7 +14,7 @@ function onScroll(event){
     const links = document.querySelectorAll(".navigation a");
 
     sections.forEach((el) => {
-        if(el.offsetTop - 250 <= cursPos && (el.offsetTop + el.offsetHeight) > cursPos){
+        if(el.offsetTop <= cursPos && (el.offsetTop + el.offsetHeight) > cursPos){
             links.forEach((a) => {
                 a.classList.remove('active');
                 if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
