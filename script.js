@@ -3,6 +3,8 @@ const mainNav = document.getElementById('navigation');
 mainNav.addEventListener('click',(event)=>{
     mainNav.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
+    navBlock.classList.add('visibility_nav');
+    turned.classList.add('visibility_nav');
 });
 
 
@@ -14,7 +16,7 @@ function onScroll(event){
     const links = document.querySelectorAll(".navigation a");
 
     sections.forEach((el) => {
-        if(el.offsetTop <= cursPos && (el.offsetTop + el.offsetHeight) > cursPos){
+        if(el.offsetTop-250 <= cursPos && (el.offsetTop + el.offsetHeight) > cursPos){
             links.forEach((a) => {
                 a.classList.remove('active');
                 if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
@@ -72,6 +74,8 @@ document.addEventListener('keydown',function(evt){
 });
 
 
+//перемещение картинок парфолио
+
 
 var portfolioNavButton = document.querySelectorAll('.navigation-list button');
 
@@ -84,6 +88,7 @@ var addThumbnailClickHandler = function(element) {
             const Img = portfolioImg.querySelectorAll('img');
             const img0 = Img[0].src;
             element.classList.add('active1');
+            portfolioImg.querySelectorAll('img').forEach(el => el.classList.remove('active3'));
             for(var i = 0; i  < Img.length; i++){
                 if(i == Img.length-1 ){
                     Img[i].src = img0;
@@ -96,9 +101,6 @@ var addThumbnailClickHandler = function(element) {
 for (var i = 0; i < portfolioNavButton.length; i++) {
     addThumbnailClickHandler(portfolioNavButton[i]);
 }
-
-
-
 
 
 
@@ -180,6 +182,17 @@ function onScrollRight(event){
     noActiveElement.classList.add('activeElement');
     ActiveElement.classList.remove('activeElement')
     },500)
-    
-
 }
+
+//
+const headerMenu = document.querySelector('.header__menu');
+const navBlock = document.querySelector('.header__navigation');
+const turned = document.querySelector('.turned');
+headerMenu.addEventListener('click',(event)=>{
+    navBlock.classList.remove('visibility_nav');
+    turned.classList.remove('visibility_nav');
+});
+turned.addEventListener('click',(event)=>{
+    navBlock.classList.add('visibility_nav');
+    turned.classList.add('visibility_nav');
+});
