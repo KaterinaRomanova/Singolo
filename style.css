@@ -205,7 +205,7 @@
         outline: 5px solid #f06c64 ;
     }
     .portfolio__img-block>img:not(.active3):hover{
-        outline: #f06c64 solid 5px; white; 
+        outline: #f06c64 solid 5px white; 
         cursor: pointer;
     }
     .portfolio__wrapper{
