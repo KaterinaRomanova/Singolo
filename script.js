@@ -5,6 +5,7 @@ mainNav.addEventListener('click',(event)=>{
     event.target.classList.add('active');
     navBlock.classList.add('visibility_nav');
     turned.classList.add('visibility_nav');
+    logo.classList.remove('active-logo');
 });
 
 
@@ -188,11 +189,14 @@ function onScrollRight(event){
 const headerMenu = document.querySelector('.header__menu');
 const navBlock = document.querySelector('.header__navigation');
 const turned = document.querySelector('.turned');
+const logo = document.querySelector('.logo');
 headerMenu.addEventListener('click',(event)=>{
     navBlock.classList.remove('visibility_nav');
     turned.classList.remove('visibility_nav');
+    logo.classList.add('active-logo');
 });
 turned.addEventListener('click',(event)=>{
     navBlock.classList.add('visibility_nav');
     turned.classList.add('visibility_nav');
+    logo.classList.remove('active-logo');
 });

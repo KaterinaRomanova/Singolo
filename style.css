@@ -333,14 +333,14 @@
         font-size: 24px;
     }
     .navigation .nav{
-        margin-bottom: 27px;
+        margin-bottom: 28px;
     }
     .nav span{
         display: none;
     }
     .header__menu{
-        margin-left: 20px;
-        margin-top: 26px;
+        margin-left: 17px;
+        margin-top: 22px;
         display: inline-block;
         z-index: 1;
         position: absolute;
@@ -535,6 +535,11 @@
     .footer-wrapper .footer-icon{
         margin-left: 30%;
     }
+    .header__wrapper>.active-logo{
+        z-index: 4;
+        margin-left: 70px;
+    }
+    
 }
 @font-face{
     font-family: 'Lato';
@@ -996,6 +1001,7 @@ textarea::placeholder{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.1);
+    z-index: 5;
 }
 
 .modal__wrapper{
